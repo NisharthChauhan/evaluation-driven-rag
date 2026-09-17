@@ -1,64 +1,84 @@
 # Evaluation-Driven RAG System
 
-An evaluation-driven RAG framework that compares vector, semantic, hybrid, and reranked retrieval pipelines using retrieval and answer-quality metrics.
+An evaluation-driven Retrieval-Augmented Generation (RAG) framework for comparing vector, semantic, hybrid, and reranked retrieval pipelines using retrieval, answer-quality, and latency metrics.
 
 ## Overview
 
-The project indexes the **RAG-Multi-Corpus Benchmark**, a challenging and heterogeneous dataset containing 1,180 files across 5 synthetic enterprise domains, including ZX Bank, Velvera Technologies, and Aventro Motors.
+This project evaluates different RAG retrieval strategies on the **RAG-Multi-Corpus Benchmark**, a challenging and heterogeneous dataset containing 1,180 files across 5 synthetic enterprise domains, including ZX Bank, Velvera Technologies, and Aventro Motors.
 
-The system compares multiple retrieval strategies — Simple Vector, Semantic Vector, Hybrid, and Hybrid + Reranker — using a reproducible evaluation benchmark to study retrieval quality, answer quality, and the effect of out-of-domain (OOD) shift.
+The system compares four retrieval configurations:
+
+- Simple Vector Retrieval
+- Semantic Vector Retrieval
+- Hybrid Retrieval
+- Hybrid Retrieval + Cross-Encoder Reranking
+
+The goal is to systematically measure retrieval quality, generated-answer quality, and latency rather than evaluating a RAG system only through qualitative examples.
 
 ## Key Features
 
-- Multiple document formats: PDF, DOCX, PPTX, HTML, Markdown
+- Multiple document formats: PDF, DOCX, PPTX, HTML, and Markdown
 - Structure-aware semantic chunking
 - Dense vector retrieval using ChromaDB
 - Sparse keyword retrieval using BM25
 - Hybrid retrieval with score normalization and weighted fusion
 - Cross-encoder reranking
 - Local LLM generation using Ollama
-- Retrieval evaluation using Recall@5, Precision@5, and MRR
-- Answer evaluation using Faithfulness and Correctness
+- Retrieval evaluation using:
+  - Recall@5
+  - Precision@5
+  - Mean Reciprocal Rank (MRR)
+- Answer evaluation using:
+  - Faithfulness
+  - Correctness
 - Latency comparison across retrieval pipelines
 
 ## Problem Statement
 
 > **How can we systematically improve and measure RAG retrieval performance on highly specific enterprise data?**
 
-Naive RAG systems can suffer from missing context, poor chunk boundaries, and hallucination. General-purpose embeddings can also struggle with exact enterprise-specific terminology, acronyms, and form identifiers.
+Naive RAG systems can suffer from missing context, poor chunk boundaries, and hallucination. General-purpose embedding models can also struggle with enterprise-specific terminology, acronyms, and exact identifiers.
 
 This project addresses these challenges through reproducible retrieval metrics such as Recall@K and MRR, hybrid retrieval using vector search and BM25, score normalization and fusion, and LLM-as-a-judge evaluation.
 
 ## Architecture
 
 ```text
-Documents
-   │
-   ▼
-Ingestion & Parsing
-   │
-   ▼
-Semantic Chunking
-   │
-   ├──────────────► ChromaDB
-   │                    │
-   └──────────────► BM25 Index
-                        │
-                        ▼
-              Hybrid Retrieval
-                        │
-                        ▼
-                 Top-K Candidates
-                        │
-                        ▼
-                 Cross-Encoder
-                  (Optional)
-                        │
-                        ▼
-                  Qwen3:8b
-                        │
-                        ▼
-                  Final Answer
+                    Documents
+                       │
+                       ▼
+                Ingestion & Parsing
+                       │
+                       ▼
+                 Chunking Strategy
+                       │
+          ┌────────────┴────────────┐
+          ▼                         ▼
+     ChromaDB                    BM25 Index
+    Vector Search             Keyword Search
+          │                         │
+          │        ┌────────────────┘
+          │        │
+          ▼        ▼
+       Vector     Hybrid
+       Search     Fusion
+          │        │
+          └────┬───┘
+               ▼
+          Top-K Candidates
+               │
+               ▼
+       Cross-Encoder Reranker
+            (Optional)
+               │
+               ▼
+            Qwen3:8b
+               │
+               ▼
+          Final Answer
+               │
+               ▼
+           Evaluation
 ```
 
 ## Technology Stack
@@ -76,14 +96,45 @@ Semantic Chunking
 ```text
 evaluation-driven-rag/
 │
-├── configs/          # Project configuration files
-├── data/             # Benchmark data and local evaluation data
-├── evaluation/       # Evaluation scripts and pipeline code
-├── experiments/      # Code for comparative RAG experiments
-├── results/          # Evaluation metrics and result files
-├── scripts/          # Executable benchmarking and experiment scripts
-├── src/              # Core RAG source code
-└── tests/            # Automated tests
+├── .github/
+│   └── workflows/
+│       └── evaluate.yml
+│
+├── data/
+│   └── benchmark.json
+│
+├── results/
+│   └── metrics.csv
+│
+├── scripts/
+│   ├── generate_benchmark.py
+│   └── run_experiments.py
+│
+├── src/
+│   ├── __init__.py
+│   ├── api.py
+│   ├── bm25_store.py
+│   ├── chunking.py
+│   ├── generator.py
+│   ├── hybrid_store.py
+│   ├── ingestion.py
+│   ├── metrics.py
+│   └── vector_store.py
+│
+├── tests/
+│   ├── __init__.py
+│   ├── test_chunking.py
+│   ├── test_generation.py
+│   ├── test_hybrid.py
+│   ├── test_ingestion.py
+│   ├── test_metrics.py
+│   └── test_retrieval.py
+│
+├── Dockerfile
+├── docker-compose.yml
+├── requirements.txt
+├── README.md
+└── .gitignore
 ```
 
 ## Installation
@@ -164,7 +215,7 @@ The project evaluates four distinct retrieval configurations on a curated benchm
 
 ## Results
 
-The final benchmark evaluation uses 20 enterprise questions.
+The reported results are based on a curated set of 20 enterprise questions selected from the RAG-Multi-Corpus Benchmark.
 
 | Method | Recall@5 | Precision@5 | MRR | Faithfulness | Correctness | Latency (s) |
 |--------|---------:|------------:|----:|-------------:|------------:|------------:|
@@ -185,6 +236,7 @@ The final benchmark evaluation uses 20 enterprise questions.
 
 - The current evaluation benchmark is limited to 20 questions and may not capture all possible edge cases.
 - Enterprise-specific acronyms and terminology can remain challenging for general-purpose embedding models, particularly when relevant matches depend on exact terminology.
+- The benchmark consists of synthetic enterprise data, so the observed results may not directly generalize to real-world enterprise datasets.
 
 ## Future Work
 
