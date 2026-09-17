@@ -215,7 +215,7 @@ The project evaluates four distinct retrieval configurations on a curated benchm
 
 ## Results
 
-The reported results are based on a curated set of 20 enterprise questions selected from the RAG-Multi-Corpus Benchmark.
+The reported results are based on a curated set of 50 enterprise questions selected from the RAG-Multi-Corpus Benchmark.
 
 | Method | Recall@5 | Precision@5 | MRR | Faithfulness | Correctness | Latency (s) |
 |--------|---------:|------------:|----:|-------------:|------------:|------------:|
@@ -234,7 +234,7 @@ The reported results are based on a curated set of 20 enterprise questions selec
 
 ## Limitations
 
-- The current evaluation benchmark is limited to 20 questions and may not capture all possible edge cases.
+- The current evaluation benchmark is limited to 50 questions and may not capture all possible edge cases.
 - Enterprise-specific acronyms and terminology can remain challenging for general-purpose embedding models, particularly when relevant matches depend on exact terminology.
 - The benchmark consists of synthetic enterprise data, so the observed results may not directly generalize to real-world enterprise datasets.
 
@@ -251,7 +251,7 @@ This project uses the **RAG-Multi-Corpus Dataset** for evaluating retrieval and 
 - **Original Source:** [RAG-Multi-Corpus](https://github.com/udayallu/RAG-Multi-Corpus)
 - The dataset is synthetic and contains fictional enterprise organizations.
 - The dataset is an external resource and is not developed as part of this project.
-- The original benchmark contains a larger set of queries; this project uses a curated subset of 20 questions for its evaluation experiments.
+- The original benchmark contains a larger set of queries; this project uses a curated subset of 50 questions for its evaluation experiments.
 - To reproduce the experiments, download the dataset from the original repository and place the required files in the appropriate `data/` directory.
 
 ## Author
