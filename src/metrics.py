@@ -17,13 +17,14 @@ def calculate_mrr(retrieved_ids: List[str], ground_truth_ids: List[str]) -> floa
 
 def calculate_precision_at_k(retrieved_ids: List[str], ground_truth_ids: List[str], k: int) -> float:
     retrieved_k = retrieved_ids[:k]
-    if not retrieved_k or not ground_truth_ids:
+
+    if not retrieved_k:
         return 0.0
+
     hits = set(retrieved_k).intersection(set(ground_truth_ids))
-    # Cap denominator at len(ground_truth_ids) so we don't artificially lower precision 
-    # when there are fewer ground truth chunks than k.
-    denominator = min(k, len(ground_truth_ids))
-    return len(hits) / float(denominator)
+
+    # Precision@K = relevant retrieved documents / retrieved documents
+    return len(hits) / float(len(retrieved_k))
 
 class LLMEvaluator:
     def __init__(self, model_name: str = "gpt-4o-mini"):
