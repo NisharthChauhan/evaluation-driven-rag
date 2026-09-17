@@ -1,0 +1,30 @@
+# Python Environments
+venv/
+.venv/
+env/
+.env
+
+# Python Caches
+__pycache__/
+*.py[cod]
+*$py.class
+.mypy_cache/
+.pytest_cache/
+
+# IDE / Editor Files
+.vscode/
+.idea/
+
+# Databases & Heavy Datasets
+data/chroma_db*
+data/corpus/
+data/fastapi_docs/
+data/evaluation/
+RAG-Multi-Corpus-main/
+
+# OS Files
+.DS_Store
+
+# Private Interview Files
+Master Prompt*
+GitHub_Upload_Instructions.md

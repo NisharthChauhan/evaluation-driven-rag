@@ -1,0 +1,702 @@
+[
+    {
+        "id": "q001",
+        "question": "Sample Exact-term question for tutorial/path-operation-configuration.md?",
+        "ground_truth_answer": "This is the ground truth based on Recap { #recap }.",
+        "source_documents": [
+            "tutorial/path-operation-configuration.md"
+        ],
+        "source_sections": [
+            "Recap { #recap }"
+        ],
+        "expected_chunk_id": "7a0ee3db1eb3_chunk_12",
+        "difficulty": "easy",
+        "category": "Exact-term"
+    },
+    {
+        "id": "q002",
+        "question": "Sample Conceptual question for advanced/path-operation-advanced-configuration.md?",
+        "ground_truth_answer": "This is the ground truth based on Custom OpenAPI *path operation* schema { #custom-openapi-path-operation-schema }.",
+        "source_documents": [
+            "advanced/path-operation-advanced-configuration.md"
+        ],
+        "source_sections": [
+            "Custom OpenAPI *path operation* schema { #custom-openapi-path-operation-schema }"
+        ],
+        "expected_chunk_id": "e5be18bd63f2_chunk_14",
+        "difficulty": "easy",
+        "category": "Conceptual"
+    },
+    {
+        "id": "q003",
+        "question": "Sample Exact-term question for index.md?",
+        "ground_truth_answer": "This is the ground truth based on Deploy to other cloud providers { #deploy-to-other-cloud-providers }.",
+        "source_documents": [
+            "index.md"
+        ],
+        "source_sections": [
+            "Deploy to other cloud providers { #deploy-to-other-cloud-providers }"
+        ],
+        "expected_chunk_id": "d680e8a854a7_chunk_49",
+        "difficulty": "hard",
+        "category": "Exact-term"
+    },
+    {
+        "id": "q004",
+        "question": "Sample Factual question for tutorial/security/index.md?",
+        "ground_truth_answer": "This is the ground truth based on OAuth2 { #oauth2 }.",
+        "source_documents": [
+            "tutorial/security/index.md"
+        ],
+        "source_sections": [
+            "OAuth2 { #oauth2 }"
+        ],
+        "expected_chunk_id": "7613c23cbe7c_chunk_3",
+        "difficulty": "hard",
+        "category": "Factual"
+    },
+    {
+        "id": "q005",
+        "question": "Sample Technical question for reference/responses.md?",
+        "ground_truth_answer": "This is the ground truth based on Custom Response Classes - File, HTML, Redirect, Streaming, etc..",
+        "source_documents": [
+            "reference/responses.md"
+        ],
+        "source_sections": [
+            "Custom Response Classes - File, HTML, Redirect, Streaming, etc."
+        ],
+        "expected_chunk_id": "05e367b4375e_chunk_0",
+        "difficulty": "easy",
+        "category": "Technical"
+    },
+    {
+        "id": "q006",
+        "question": "Sample Multi-hop question for deployment/docker.md?",
+        "ground_truth_answer": "This is the ground truth based on Docker Compose { #docker-compose }.",
+        "source_documents": [
+            "deployment/docker.md"
+        ],
+        "source_sections": [
+            "Docker Compose { #docker-compose }"
+        ],
+        "expected_chunk_id": "ea78fac7682e_chunk_75",
+        "difficulty": "hard",
+        "category": "Multi-hop"
+    },
+    {
+        "id": "q007",
+        "question": "Sample Conceptual question for release-notes.md?",
+        "ground_truth_answer": "This is the ground truth based on 0.30.1 (2019-06-28).",
+        "source_documents": [
+            "release-notes.md"
+        ],
+        "source_sections": [
+            "0.30.1 (2019-06-28)"
+        ],
+        "expected_chunk_id": "066aa012c023_chunk_1235",
+        "difficulty": "hard",
+        "category": "Conceptual"
+    },
+    {
+        "id": "q008",
+        "question": "Sample Multi-hop question for deployment/https.md?",
+        "ground_truth_answer": "This is the ground truth based on HTTPS Response { #https-response }.",
+        "source_documents": [
+            "deployment/https.md"
+        ],
+        "source_sections": [
+            "HTTPS Response { #https-response }"
+        ],
+        "expected_chunk_id": "3d150ec9ab52_chunk_20",
+        "difficulty": "easy",
+        "category": "Multi-hop"
+    },
+    {
+        "id": "q009",
+        "question": "Sample Exact-term question for advanced/advanced-dependencies.md?",
+        "ground_truth_answer": "This is the ground truth based on Use the instance as a dependency { #use-the-instance-as-a-dependency }.",
+        "source_documents": [
+            "advanced/advanced-dependencies.md"
+        ],
+        "source_sections": [
+            "Use the instance as a dependency { #use-the-instance-as-a-dependency }"
+        ],
+        "expected_chunk_id": "1c3efb0e5b9c_chunk_7",
+        "difficulty": "easy",
+        "category": "Exact-term"
+    },
+    {
+        "id": "q010",
+        "question": "Sample Conceptual question for release-notes.md?",
+        "ground_truth_answer": "This is the ground truth based on Translations.",
+        "source_documents": [
+            "release-notes.md"
+        ],
+        "source_sections": [
+            "Translations"
+        ],
+        "expected_chunk_id": "066aa012c023_chunk_650",
+        "difficulty": "easy",
+        "category": "Conceptual"
+    },
+    {
+        "id": "q011",
+        "question": "Sample Conceptual question for release-notes.md?",
+        "ground_truth_answer": "This is the ground truth based on Fixes.",
+        "source_documents": [
+            "release-notes.md"
+        ],
+        "source_sections": [
+            "Fixes"
+        ],
+        "expected_chunk_id": "066aa012c023_chunk_938",
+        "difficulty": "hard",
+        "category": "Conceptual"
+    },
+    {
+        "id": "q012",
+        "question": "Sample Multi-hop question for tutorial/path-operation-configuration.md?",
+        "ground_truth_answer": "This is the ground truth based on Response Status Code { #response-status-code }.",
+        "source_documents": [
+            "tutorial/path-operation-configuration.md"
+        ],
+        "source_sections": [
+            "Response Status Code { #response-status-code }"
+        ],
+        "expected_chunk_id": "7a0ee3db1eb3_chunk_2",
+        "difficulty": "hard",
+        "category": "Multi-hop"
+    },
+    {
+        "id": "q013",
+        "question": "Sample Technical question for release-notes.md?",
+        "ground_truth_answer": "This is the ground truth based on Translations.",
+        "source_documents": [
+            "release-notes.md"
+        ],
+        "source_sections": [
+            "Translations"
+        ],
+        "expected_chunk_id": "066aa012c023_chunk_783",
+        "difficulty": "hard",
+        "category": "Technical"
+    },
+    {
+        "id": "q014",
+        "question": "Sample Multi-hop question for advanced/additional-responses.md?",
+        "ground_truth_answer": "This is the ground truth based on Additional Response with `model` { #additional-response-with-model }.",
+        "source_documents": [
+            "advanced/additional-responses.md"
+        ],
+        "source_sections": [
+            "Additional Response with `model` { #additional-response-with-model }"
+        ],
+        "expected_chunk_id": "d60bde811eaa_chunk_6",
+        "difficulty": "medium",
+        "category": "Multi-hop"
+    },
+    {
+        "id": "q015",
+        "question": "Sample Exact-term question for advanced/behind-a-proxy.md?",
+        "ground_truth_answer": "This is the ground truth based on Proxy with a stripped path prefix { #proxy-with-a-stripped-path-prefix }.",
+        "source_documents": [
+            "advanced/behind-a-proxy.md"
+        ],
+        "source_sections": [
+            "Proxy with a stripped path prefix { #proxy-with-a-stripped-path-prefix }"
+        ],
+        "expected_chunk_id": "c910ffe610c4_chunk_13",
+        "difficulty": "hard",
+        "category": "Exact-term"
+    },
+    {
+        "id": "q016",
+        "question": "Sample Technical question for deployment/docker.md?",
+        "ground_truth_answer": "This is the ground truth based on Container Images { #container-images }.",
+        "source_documents": [
+            "deployment/docker.md"
+        ],
+        "source_sections": [
+            "Container Images { #container-images }"
+        ],
+        "expected_chunk_id": "ea78fac7682e_chunk_10",
+        "difficulty": "hard",
+        "category": "Technical"
+    },
+    {
+        "id": "q017",
+        "question": "Sample Multi-hop question for how-to/general.md?",
+        "ground_truth_answer": "This is the ground truth based on Documentation Deprecate a *Path Operation* - OpenAPI { #documentation-deprecate-a-path-operation-openapi }.",
+        "source_documents": [
+            "how-to/general.md"
+        ],
+        "source_sections": [
+            "Documentation Deprecate a *Path Operation* - OpenAPI { #documentation-deprecate-a-path-operation-openapi }"
+        ],
+        "expected_chunk_id": "3bc9c60310ba_chunk_6",
+        "difficulty": "medium",
+        "category": "Multi-hop"
+    },
+    {
+        "id": "q018",
+        "question": "Sample Factual question for tutorial/cookie-params.md?",
+        "ground_truth_answer": "This is the ground truth based on Declare `Cookie` parameters { #declare-cookie-parameters }.",
+        "source_documents": [
+            "tutorial/cookie-params.md"
+        ],
+        "source_sections": [
+            "Declare `Cookie` parameters { #declare-cookie-parameters }"
+        ],
+        "expected_chunk_id": "8eb99188537e_chunk_3",
+        "difficulty": "medium",
+        "category": "Factual"
+    },
+    {
+        "id": "q019",
+        "question": "Sample Factual question for release-notes.md?",
+        "ground_truth_answer": "This is the ground truth based on 0.116.0 (2025-07-07).",
+        "source_documents": [
+            "release-notes.md"
+        ],
+        "source_sections": [
+            "0.116.0 (2025-07-07)"
+        ],
+        "expected_chunk_id": "066aa012c023_chunk_396",
+        "difficulty": "hard",
+        "category": "Factual"
+    },
+    {
+        "id": "q020",
+        "question": "Sample Conceptual question for advanced/behind-a-proxy.md?",
+        "ground_truth_answer": "This is the ground truth based on Proxy with a stripped path prefix { #proxy-with-a-stripped-path-prefix }.",
+        "source_documents": [
+            "advanced/behind-a-proxy.md"
+        ],
+        "source_sections": [
+            "Proxy with a stripped path prefix { #proxy-with-a-stripped-path-prefix }"
+        ],
+        "expected_chunk_id": "c910ffe610c4_chunk_13",
+        "difficulty": "medium",
+        "category": "Conceptual"
+    },
+    {
+        "id": "q021",
+        "question": "Sample Factual question for advanced/events.md?",
+        "ground_truth_answer": "This is the ground truth based on Technical Details { #technical-details }.",
+        "source_documents": [
+            "advanced/events.md"
+        ],
+        "source_sections": [
+            "Technical Details { #technical-details }"
+        ],
+        "expected_chunk_id": "60d8094adc67_chunk_20",
+        "difficulty": "easy",
+        "category": "Factual"
+    },
+    {
+        "id": "q022",
+        "question": "Sample Conceptual question for advanced/stream-data.md?",
+        "ground_truth_answer": "This is the ground truth based on Simulate a File { #simulate-a-file }.",
+        "source_documents": [
+            "advanced/stream-data.md"
+        ],
+        "source_sections": [
+            "Simulate a File { #simulate-a-file }"
+        ],
+        "expected_chunk_id": "1fdc3f08f78d_chunk_9",
+        "difficulty": "easy",
+        "category": "Conceptual"
+    },
+    {
+        "id": "q023",
+        "question": "Sample Multi-hop question for advanced/events.md?",
+        "ground_truth_answer": "This is the ground truth based on Sub Applications { #sub-applications }.",
+        "source_documents": [
+            "advanced/events.md"
+        ],
+        "source_sections": [
+            "Sub Applications { #sub-applications }"
+        ],
+        "expected_chunk_id": "60d8094adc67_chunk_21",
+        "difficulty": "easy",
+        "category": "Multi-hop"
+    },
+    {
+        "id": "q024",
+        "question": "Sample Factual question for tutorial/body.md?",
+        "ground_truth_answer": "This is the ground truth based on Request body + path + query parameters { #request-body-path-query-parameters }.",
+        "source_documents": [
+            "tutorial/body.md"
+        ],
+        "source_sections": [
+            "Request body + path + query parameters { #request-body-path-query-parameters }"
+        ],
+        "expected_chunk_id": "66568e8624c2_chunk_16",
+        "difficulty": "easy",
+        "category": "Factual"
+    },
+    {
+        "id": "q025",
+        "question": "Sample Multi-hop question for tutorial/dependencies/sub-dependencies.md?",
+        "ground_truth_answer": "This is the ground truth based on First dependency \"dependable\" { #first-dependency-dependable }.",
+        "source_documents": [
+            "tutorial/dependencies/sub-dependencies.md"
+        ],
+        "source_sections": [
+            "First dependency \"dependable\" { #first-dependency-dependable }"
+        ],
+        "expected_chunk_id": "cdc4a8759b95_chunk_1",
+        "difficulty": "hard",
+        "category": "Multi-hop"
+    },
+    {
+        "id": "q026",
+        "question": "Sample Technical question for tutorial/dependencies/dependencies-with-yield.md?",
+        "ground_truth_answer": "This is the ground truth based on Using context managers in dependencies with `yield` { #using-context-managers-in-dependencies-with-yield }.",
+        "source_documents": [
+            "tutorial/dependencies/dependencies-with-yield.md"
+        ],
+        "source_sections": [
+            "Using context managers in dependencies with `yield` { #using-context-managers-in-dependencies-with-yield }"
+        ],
+        "expected_chunk_id": "e11d5fdec3da_chunk_35",
+        "difficulty": "medium",
+        "category": "Technical"
+    },
+    {
+        "id": "q027",
+        "question": "Sample Factual question for advanced/dataclasses.md?",
+        "ground_truth_answer": "This is the ground truth based on Dataclasses in Nested Data Structures { #dataclasses-in-nested-data-structures }.",
+        "source_documents": [
+            "advanced/dataclasses.md"
+        ],
+        "source_sections": [
+            "Dataclasses in Nested Data Structures { #dataclasses-in-nested-data-structures }"
+        ],
+        "expected_chunk_id": "16898f80aeeb_chunk_6",
+        "difficulty": "easy",
+        "category": "Factual"
+    },
+    {
+        "id": "q028",
+        "question": "Sample Conceptual question for deployment/https.md?",
+        "ground_truth_answer": "This is the ground truth based on HTTPS Response { #https-response }.",
+        "source_documents": [
+            "deployment/https.md"
+        ],
+        "source_sections": [
+            "HTTPS Response { #https-response }"
+        ],
+        "expected_chunk_id": "3d150ec9ab52_chunk_21",
+        "difficulty": "medium",
+        "category": "Conceptual"
+    },
+    {
+        "id": "q029",
+        "question": "Sample Factual question for release-notes.md?",
+        "ground_truth_answer": "This is the ground truth based on Docs.",
+        "source_documents": [
+            "release-notes.md"
+        ],
+        "source_sections": [
+            "Docs"
+        ],
+        "expected_chunk_id": "066aa012c023_chunk_626",
+        "difficulty": "easy",
+        "category": "Factual"
+    },
+    {
+        "id": "q030",
+        "question": "Sample Factual question for async.md?",
+        "ground_truth_answer": "This is the ground truth based on Concurrency and Burgers { #concurrency-and-burgers }.",
+        "source_documents": [
+            "async.md"
+        ],
+        "source_sections": [
+            "Concurrency and Burgers { #concurrency-and-burgers }"
+        ],
+        "expected_chunk_id": "29e7f6db811d_chunk_12",
+        "difficulty": "medium",
+        "category": "Factual"
+    },
+    {
+        "id": "q031",
+        "question": "Sample Multi-hop question for release-notes.md?",
+        "ground_truth_answer": "This is the ground truth based on Forbid Extra Query (Cookie, Header) Parameters.",
+        "source_documents": [
+            "release-notes.md"
+        ],
+        "source_sections": [
+            "Forbid Extra Query (Cookie, Header) Parameters"
+        ],
+        "expected_chunk_id": "066aa012c023_chunk_515",
+        "difficulty": "hard",
+        "category": "Multi-hop"
+    },
+    {
+        "id": "q032",
+        "question": "Sample Multi-hop question for tutorial/bigger-applications.md?",
+        "ground_truth_answer": "This is the ground truth based on How relative imports work { #how-relative-imports-work }.",
+        "source_documents": [
+            "tutorial/bigger-applications.md"
+        ],
+        "source_sections": [
+            "How relative imports work { #how-relative-imports-work }"
+        ],
+        "expected_chunk_id": "09fb90316efa_chunk_23",
+        "difficulty": "medium",
+        "category": "Multi-hop"
+    },
+    {
+        "id": "q033",
+        "question": "Sample Technical question for tutorial/handling-errors.md?",
+        "ground_truth_answer": "This is the ground truth based on Use the `RequestValidationError` body { #use-the-requestvalidationerror-body }.",
+        "source_documents": [
+            "tutorial/handling-errors.md"
+        ],
+        "source_sections": [
+            "Use the `RequestValidationError` body { #use-the-requestvalidationerror-body }"
+        ],
+        "expected_chunk_id": "5dfecee5ebf8_chunk_20",
+        "difficulty": "medium",
+        "category": "Technical"
+    },
+    {
+        "id": "q034",
+        "question": "Sample Exact-term question for deployment/concepts.md?",
+        "ground_truth_answer": "This is the ground truth based on Multiple Processes - Workers { #multiple-processes-workers }.",
+        "source_documents": [
+            "deployment/concepts.md"
+        ],
+        "source_sections": [
+            "Multiple Processes - Workers { #multiple-processes-workers }"
+        ],
+        "expected_chunk_id": "aa55a26e86d5_chunk_28",
+        "difficulty": "easy",
+        "category": "Exact-term"
+    },
+    {
+        "id": "q035",
+        "question": "Sample Exact-term question for reference/websockets.md?",
+        "ground_truth_answer": "This is the ground truth based on WebSockets - additional classes.",
+        "source_documents": [
+            "reference/websockets.md"
+        ],
+        "source_sections": [
+            "WebSockets - additional classes"
+        ],
+        "expected_chunk_id": "7b1a8ac8f52e_chunk_3",
+        "difficulty": "medium",
+        "category": "Exact-term"
+    },
+    {
+        "id": "q036",
+        "question": "Sample Factual question for tutorial/first-steps.md?",
+        "ground_truth_answer": "This is the ground truth based on Step 4: define the **path operation function** { #step-4-define-the-path-operation-function }.",
+        "source_documents": [
+            "tutorial/first-steps.md"
+        ],
+        "source_sections": [
+            "Step 4: define the **path operation function** { #step-4-define-the-path-operation-function }"
+        ],
+        "expected_chunk_id": "d2bf7a40fb8a_chunk_37",
+        "difficulty": "medium",
+        "category": "Factual"
+    },
+    {
+        "id": "q037",
+        "question": "Sample Exact-term question for tutorial/security/first-steps.md?",
+        "ground_truth_answer": "This is the ground truth based on Recap { #recap }.",
+        "source_documents": [
+            "tutorial/security/first-steps.md"
+        ],
+        "source_sections": [
+            "Recap { #recap }"
+        ],
+        "expected_chunk_id": "b7b3fcf624aa_chunk_20",
+        "difficulty": "medium",
+        "category": "Exact-term"
+    },
+    {
+        "id": "q038",
+        "question": "Sample Exact-term question for async.md?",
+        "ground_truth_answer": "This is the ground truth based on Concurrent Burgers { #concurrent-burgers }.",
+        "source_documents": [
+            "async.md"
+        ],
+        "source_sections": [
+            "Concurrent Burgers { #concurrent-burgers }"
+        ],
+        "expected_chunk_id": "29e7f6db811d_chunk_16",
+        "difficulty": "medium",
+        "category": "Exact-term"
+    },
+    {
+        "id": "q039",
+        "question": "Sample Multi-hop question for tutorial/body-nested-models.md?",
+        "ground_truth_answer": "This is the ground truth based on Declare a `list` with a type parameter { #declare-a-list-with-a-type-parameter }.",
+        "source_documents": [
+            "tutorial/body-nested-models.md"
+        ],
+        "source_sections": [
+            "Declare a `list` with a type parameter { #declare-a-list-with-a-type-parameter }"
+        ],
+        "expected_chunk_id": "a8b63043f506_chunk_4",
+        "difficulty": "medium",
+        "category": "Multi-hop"
+    },
+    {
+        "id": "q040",
+        "question": "Sample Conceptual question for tutorial/body-fields.md?",
+        "ground_truth_answer": "This is the ground truth based on Declare model attributes { #declare-model-attributes }.",
+        "source_documents": [
+            "tutorial/body-fields.md"
+        ],
+        "source_sections": [
+            "Declare model attributes { #declare-model-attributes }"
+        ],
+        "expected_chunk_id": "2c9bd6264a10_chunk_3",
+        "difficulty": "hard",
+        "category": "Conceptual"
+    },
+    {
+        "id": "q041",
+        "question": "Sample Factual question for tutorial/dependencies/dependencies-with-yield.md?",
+        "ground_truth_answer": "This is the ground truth based on Using context managers in dependencies with `yield` { #using-context-managers-in-dependencies-with-yield }.",
+        "source_documents": [
+            "tutorial/dependencies/dependencies-with-yield.md"
+        ],
+        "source_sections": [
+            "Using context managers in dependencies with `yield` { #using-context-managers-in-dependencies-with-yield }"
+        ],
+        "expected_chunk_id": "e11d5fdec3da_chunk_33",
+        "difficulty": "easy",
+        "category": "Factual"
+    },
+    {
+        "id": "q042",
+        "question": "Sample Multi-hop question for features.md?",
+        "ground_truth_answer": "This is the ground truth based on A Pydantic model.",
+        "source_documents": [
+            "features.md"
+        ],
+        "source_sections": [
+            "A Pydantic model"
+        ],
+        "expected_chunk_id": "e1ec7fcfd5aa_chunk_10",
+        "difficulty": "easy",
+        "category": "Multi-hop"
+    },
+    {
+        "id": "q043",
+        "question": "Sample Exact-term question for tutorial/dependencies/dependencies-with-yield.md?",
+        "ground_truth_answer": "This is the ground truth based on Using context managers in dependencies with `yield` { #using-context-managers-in-dependencies-with-yield }.",
+        "source_documents": [
+            "tutorial/dependencies/dependencies-with-yield.md"
+        ],
+        "source_sections": [
+            "Using context managers in dependencies with `yield` { #using-context-managers-in-dependencies-with-yield }"
+        ],
+        "expected_chunk_id": "e11d5fdec3da_chunk_33",
+        "difficulty": "hard",
+        "category": "Exact-term"
+    },
+    {
+        "id": "q044",
+        "question": "Sample Exact-term question for advanced/strict-content-type.md?",
+        "ground_truth_answer": "This is the ground truth based on Strict Content-Type Checking { #strict-content-type-checking }.",
+        "source_documents": [
+            "advanced/strict-content-type.md"
+        ],
+        "source_sections": [
+            "Strict Content-Type Checking { #strict-content-type-checking }"
+        ],
+        "expected_chunk_id": "c55c6f052cd9_chunk_0",
+        "difficulty": "medium",
+        "category": "Exact-term"
+    },
+    {
+        "id": "q045",
+        "question": "Sample Multi-hop question for release-notes.md?",
+        "ground_truth_answer": "This is the ground truth based on 0.22.0 (2019-05-16).",
+        "source_documents": [
+            "release-notes.md"
+        ],
+        "source_sections": [
+            "0.22.0 (2019-05-16)"
+        ],
+        "expected_chunk_id": "066aa012c023_chunk_1269",
+        "difficulty": "medium",
+        "category": "Multi-hop"
+    },
+    {
+        "id": "q046",
+        "question": "Sample Multi-hop question for release-notes.md?",
+        "ground_truth_answer": "This is the ground truth based on Internal.",
+        "source_documents": [
+            "release-notes.md"
+        ],
+        "source_sections": [
+            "Internal"
+        ],
+        "expected_chunk_id": "066aa012c023_chunk_1102",
+        "difficulty": "easy",
+        "category": "Multi-hop"
+    },
+    {
+        "id": "q047",
+        "question": "Sample Technical question for release-notes.md?",
+        "ground_truth_answer": "This is the ground truth based on Docs.",
+        "source_documents": [
+            "release-notes.md"
+        ],
+        "source_sections": [
+            "Docs"
+        ],
+        "expected_chunk_id": "066aa012c023_chunk_565",
+        "difficulty": "medium",
+        "category": "Technical"
+    },
+    {
+        "id": "q048",
+        "question": "Sample Conceptual question for release-notes.md?",
+        "ground_truth_answer": "This is the ground truth based on Docs.",
+        "source_documents": [
+            "release-notes.md"
+        ],
+        "source_sections": [
+            "Docs"
+        ],
+        "expected_chunk_id": "066aa012c023_chunk_131",
+        "difficulty": "medium",
+        "category": "Conceptual"
+    },
+    {
+        "id": "q049",
+        "question": "Sample Conceptual question for advanced/custom-response.md?",
+        "ground_truth_answer": "This is the ground truth based on Custom Response - HTML, Stream, File, others { #custom-response-html-stream-file-others }.",
+        "source_documents": [
+            "advanced/custom-response.md"
+        ],
+        "source_sections": [
+            "Custom Response - HTML, Stream, File, others { #custom-response-html-stream-file-others }"
+        ],
+        "expected_chunk_id": "16b07676493b_chunk_0",
+        "difficulty": "hard",
+        "category": "Conceptual"
+    },
+    {
+        "id": "q050",
+        "question": "Sample Exact-term question for release-notes.md?",
+        "ground_truth_answer": "This is the ground truth based on Forbid Extra Query (Cookie, Header) Parameters.",
+        "source_documents": [
+            "release-notes.md"
+        ],
+        "source_sections": [
+            "Forbid Extra Query (Cookie, Header) Parameters"
+        ],
+        "expected_chunk_id": "066aa012c023_chunk_515",
+        "difficulty": "easy",
+        "category": "Exact-term"
+    }
+]
