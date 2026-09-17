@@ -105,9 +105,9 @@ def run_experiments():
         faithfulness_scores = []
         correctness_scores = []
         
-        for idx, item in enumerate(benchmark[:20]): # Reduced to 20 to prevent local Ollama crashes
+        for idx, item in enumerate(benchmark[:50]): # Reduced to 50 to prevent local Ollama crashes
             if idx % 5 == 0:
-                print(f"Processing query {idx+1}/20...")
+                print(f"Processing query {idx+1}/50...")
                 
             q = item["question"]
             facts = item.get("supporting_facts", [])
